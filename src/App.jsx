@@ -1,24 +1,19 @@
-import Header from './Header.jsx'
-function App() {
+import Counter from "./Components/Counter";
+// import Componentss from "./Components/MyComponents";
+import Eventt from "./Components/OnChangeEvent";
+import colorPicker from "./Components/colorPicker";
+
+function App() {  
+   
   return(
-
-    <header>
-       <h1>My First Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Services</li>
-                    <li><a href="#"></a>Contacts</li>
-                </ul>
-            </nav>
-            <hr></hr>
-    </header>
-
-
-  );
-  
-  
+    <>
+    <colorPicker></colorPicker>
+    <Eventt></Eventt>
+    <Counter></Counter>  
+    {/* <Componentss></Componentss>  */}
+    
+    </>
+  );  
 }
 
 export default App
