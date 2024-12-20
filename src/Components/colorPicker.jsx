@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function colorPicker(){
+function ColorPicker(){
 
     const [color,setColor]= useState("nonne");
 
@@ -8,19 +8,20 @@ function colorPicker(){
         setColor(event.target.value);
     }
     return(
-        <div>
+        <div className="heading">
             <h1>Color Picker</h1>
-            <div >
-                <label>
-                    Selected Color: {color};
+            <div className="heading2" style={{backgroundColor:color}} >
+                <p>Selected Color: {color}</p>
+            </div>
+            <label>
+                    Selected Color
                     <input value={color} type="color" onChange={workWithColor}></input>
                 </label>
 
-            </div>
 
         </div>
         
         
     );
 }
-export default colorPicker
+export default ColorPicker
